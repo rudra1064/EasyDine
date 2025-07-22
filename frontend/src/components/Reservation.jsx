@@ -19,7 +19,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/reservations/send",
+        "https://easydine-2wk7.onrender.com/api/v1/reservations/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
